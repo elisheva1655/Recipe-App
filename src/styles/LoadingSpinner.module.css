@@ -2,20 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  justify-content: center;
+  padding: 60px 20px;
+  width: 100%;
 }
 
 .spinner {
+  color: #ff6b6b; /* Your theme red */
   animation: spin 1s linear infinite;
-  color: #ff6b6b;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .text {
   color: #666;
+  font-size: 1.1rem;
   font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
+/* The magic that makes it turn */
 @keyframes spin {
   from {
     transform: rotate(0deg);

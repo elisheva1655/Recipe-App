@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link to="/" className={styles.logo}>
-        <CookingPot size={28} color="#ff6b6b" strokeWidth={2.5} />
+        <CookingPot />
         <span>Recipe Explorer</span>
       </Link>
 
