@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { LikedRecipe } from "../components/likedRecipe";
 import { LikedHeader } from "../components/LikedHeader";
 export function LikedPage() {
-  const { favorites, addFavorites } = useContext(LikedContext);
+  const { favorites } = useContext(LikedContext);
 
   console.log("CONTEXT RECEIVED IN Liked PAGE:", favorites);
   if (favorites.length > 0) {
