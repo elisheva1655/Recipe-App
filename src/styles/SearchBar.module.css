@@ -1,0 +1,34 @@
+.form {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #ddd;
+  border-right: none;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.button {
+  padding: 12px 25px;
+  border-radius: 0 25px 25px 0;
+  background-color: #ff6b6b;
+  color: white;
+  border: 1px solid #ff6b6b;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #ff5252;
+}
