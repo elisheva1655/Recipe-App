@@ -65,4 +65,12 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  body,
+  html {
+    width: 98%;
+  }
+
+  #root {
+    width: 98%;
+  }
 }

@@ -27,6 +27,14 @@ export default function Navbar() {
         >
           Favorites
         </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? styles.activeLink : styles.navLink
+          }
+        >
+          About
+        </NavLink>
       </div>
     </nav>
   );
