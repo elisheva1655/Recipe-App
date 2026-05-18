@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.errorCode {
+  font-size: 5rem;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.homeButton {
+  padding: 12px 25px;
+  background-color: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.homeButton:hover {
+  transform: scale(1.05);
+  background-color: #ff5252;
+}
