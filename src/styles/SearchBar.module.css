@@ -14,7 +14,7 @@
   border-right: none;
   outline: none;
   font-size: 1rem;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 3px black;
 }
 
 .button {
