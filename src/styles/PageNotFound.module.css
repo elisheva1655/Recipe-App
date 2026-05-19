@@ -8,34 +8,22 @@
   padding: 20px;
 }
 
-.icon {
+.iconWrapper svg {
+  margin: 10;
+  width: 80px !important;
+  height: 80px !important;
   color: #ff6b6b;
-  margin-bottom: 20px;
+  stroke-width: 2px;
 }
 
 .errorCode {
   font-size: 5rem;
   margin: 0;
-  color: #1a1a1a;
+  color: black;
 }
 
 .message {
-  font-size: 1.5rem;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-.homeButton {
-  padding: 12px 25px;
-  background-color: #ff6b6b;
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: transform 0.2s;
-}
-
-.homeButton:hover {
-  transform: scale(1.05);
-  background-color: #ff5252;
+  font-size: 1.25rem;
+  color: black;
+  margin-bottom: 10px;
 }
