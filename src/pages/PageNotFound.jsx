@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Ghost } from "lucide-react"; // A fun "not found" icon
+import { Back } from "../components/backButton";
 import styles from "../styles/PageNotFound.module.css";
 
 export function PageNotFound() {
@@ -10,9 +11,7 @@ export function PageNotFound() {
       <p className={styles.message}>
         Oops! This recipe seems to have disappeared from the kitchen.
       </p>
-      <Link to="/" className={styles.homeButton}>
-        Back to Home
-      </Link>
+      <Back className={styles.homeButton} />
     </div>
   );
 }

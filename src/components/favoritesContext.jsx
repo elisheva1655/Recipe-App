@@ -7,12 +7,14 @@ export function LikedProvider({ children }) {
   });
   const addFavorites = (product) => {
     let updatedFavorites;
-    if (!product || !product.id) {
+    if (!product || !product.idMeal) {
       return;
     }
-    const isFav = favorites.some((fav) => fav.id === product.id);
+    const isFav = favorites.some((fav) => fav.idMeal === product.idMeal);
     if (isFav) {
-      updatedFavorites = favorites.filter((fav) => fav.id !== product.id);
+      updatedFavorites = favorites.filter(
+        (fav) => fav.idMeal !== product.idMeal,
+      );
     } else {
       updatedFavorites = [...favorites, product];
     }

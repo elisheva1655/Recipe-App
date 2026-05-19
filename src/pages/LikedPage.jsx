@@ -2,8 +2,9 @@ import { useEffect, useState, useContext } from "react";
 import { LikedContext } from "../components/favoritesContext";
 import styles from "../styles/LikedPage.module.css";
 import { Link } from "react-router-dom";
-import { LikedRecipe } from "../components/likedRecipe";
+//import { LikedRecipe } from "../components/likedRecipe";
 import { LikedHeader } from "../components/LikedHeader";
+import RecipeCard from "../components/RecipeCard";
 export function LikedPage() {
   const { favorites } = useContext(LikedContext);
 
@@ -14,11 +15,7 @@ export function LikedPage() {
         <LikedHeader />
         <div className={styles.productList}>
           {favorites.map((product) => (
-            <Link key={product.id} to={`/product/${product.id}`}>
-              <div className={styles.product}>
-                <LikedRecipe item={product} />
-              </div>
-            </Link>
+            <RecipeCard key={product.idMeal} recipe={product} />
           ))}
         </div>
       </main>

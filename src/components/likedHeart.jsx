@@ -7,20 +7,20 @@ export function LikedHeart({ favoriteItem }) {
   const { favorites, addFavorites } = useContext(LikedContext);
   //const { buttonClick, setButtonClick } = useContext(UserContext);
   let likeButton;
-  let isFav = favorites.some((fav) => fav.id === favoriteItem.id);
+  let isFav = favorites.some((fav) => fav.idMeal === favoriteItem?.idMeal);
   if (!isFav) {
     likeButton = <FavoriteBorderIcon color="error" />;
   } else {
     likeButton = <FavoriteIcon color="error" />;
   }
   return (
-    <div
+    <button
       onClick={() => {
         //setButtonClick(!buttonClick);
         addFavorites(favoriteItem);
       }}
     >
       {likeButton}
-    </div>
+    </button>
   );
 }
